@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header nav {
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0 20px 0;
+}
+header nav .logo img {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+header nav #navLinks {
+  display: flex;
+}
+header nav #navLinks li {
+  padding: 10px;
+}
+header nav #navLinks li a {
+  color: white;
+}
+header nav #navLinks li a:hover {
+  text-decoration: underline;
+}
+header nav .contact {
+  display: flex;
+  flex-direction: column;
+}
+header #hero {
+  height: 100vh;
+  background-image: url(img/meetingroom.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header #hero h1 {
+  color: white;
+  font-size: 4rem;
+}
+header #hero p {
+  color: antiquewhite;
+  font-size: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#section1 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+#section1 h2 {
+  font-size: 3rem;
+}
+#section2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+}
+#section2 .imageBox {
+  width: 33%;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#section2 .imageBox img {
+  width: 100%;
+}
+#section2 .imageBox span {
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+#section2 .imageBox span:hover {
+  display: block;
+}
+
+#section3 {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 40px;
+}
+#section3 h2 {
+  font-size: 3rem;
+}
+#section3 p {
+  width: 70%;
+  margin: auto;
+}/*# sourceMappingURL=style.css.map */
