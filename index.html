@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kevin Phung">
     <link rel="stylesheet" href="style.css">
-    <title>On Point Technologies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Looking Glass Security</title>
 </head>
 <body>
     <header>
@@ -16,7 +20,7 @@
             </div>
 
             <ul id="navLinks">
-                <li><a href="#section1">link1</a></li>
+                <li><a href="#section2">SERVICES</a></li>
                 <li><a href="#section2">link2</a></li>
                 <li><a href="#section3">link3</a></li>
                 <li><a href="#section4">link4</a></li>
@@ -27,64 +31,64 @@
             <div class="contact">
                 <span>Contact Us</span>
                 <a href="tel:+1234567890">123-456-7890</a>
+                <ul class="social">
+                    <li><a href="http://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    <li><a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="http://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+                </ul>
             </div>
         </nav>
         <div id="hero">
-            <h1>Welcome to my site</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente illo, vitae porro ducimus laborum facilis qui deleniti sit distinctio?</p>
+            <div class="heroText">
+                <h1>Looking Glass Security</h1>
+                <p>We can take care of all your needs. 
+                <br>Interested in getting a home security system 
+                <br>Or need to get a network set up? </p>
+                <button class="button"><a href="">Contact Us Now</a></button>
+            </div>
         </div>
     </header>
+
     <section id="section1" class="banner1">
         <h2>WHAT WE CAN DO FOR YOU</h2>
         <p>We provide a wide range of services from data and voice cabling to security and audiovisual systems.
         <br>
-        Click on any of the following categories to learn more about Onpoint Technologies's professional services.</p>
+        Click on any of the following categories to learn more about LGS's professional services.</p>
     </section>
 
-    <section id="section2" class="imageContainer">
-        <div class="imageBox">
+    <section id="section2" class="services">
+        <div class="serviceBox">
+            <img src="img/network.jpg" alt="">
+            <span>Networks</span>
+        </div>
+        <div class="serviceBox">
+            <img src="img/cameras.jpg" alt="">
+            <span>Video Surveillance</span>
+        </div>
+        <div class="serviceBox">
             <img src="img/network.jpg" alt="">
             <span>Name of Service</span>
         </div>
-        <div class="imageBox">
-            <img src="img/network.jpg" alt="">
-            <span>Name of Service</span>
-        </div>
-        <div class="imageBox">
-            <img src="img/network.jpg" alt="">
-            <span>Name of Service</span>
-        </div>
-        <div class="imageBox">
-            <img src="img/network.jpg" alt="">
-            <span>Name of Service</span>
-        </div>
-        <div class="imageBox">
-            <img src="img/network.jpg" alt="">
-            <span>Name of Service</span>
-        </div>
-        <div class="imageBox">
-            <img src="img/network.jpg" alt="">
-            <span>Name of Service</span>
-        </div>
+    
     </section>
 
     <section id="section3" class="banner2">
-        <h2>THE BLACK TIGER DIFFERENCE</h2>
-        <p>At Black Tiger, we treat your business like our own because, let's face it, your business IS our business.  We built our brand on the principles that mean the most to us: Experience, Innovation, and Honesty. This foundation allows us to treat our clients the way they want to be treated, receiving the highest quality of customer support, engineering and design from the most skilled professionals in the industry, and the highest caliber of work performed by our qualified field technicians. Unlike other low-voltage companies, we will always prioritize your business' immediate needs when planning out your project while still making sure your systems are prepared for future growth and technological advances.</p>
+        <h2>THE LGS DIFFERENCE</h2>
+        <p>At LGS, we treat your business like our own because, let's face it, your business IS our business.  We built our brand on the principles that mean the most to us: Experience, Innovation, and Honesty. This foundation allows us to treat our clients the way they want to be treated, receiving the highest quality of customer support, engineering and design from the most skilled professionals in the industry, and the highest caliber of work performed by our qualified field technicians. Unlike other low-voltage companies, we will always prioritize your business' immediate needs when planning out your project while still making sure your systems are prepared for future growth and technological advances.</p>
     </section>
 
     <section id="section4" class="review">
         <div class="reviewIcons">
             <div class="icon">
-                <img src="#" alt="">
+                <img src="img/gears.png" alt="">
                 <span>EXPERIENCE</span>
             </div>
             <div class="icon">
-                <img src="#" alt="">
+                <img src="img/head.png" alt="">
                 <span>INNOVATION</span>
             </div>
             <div class="icon">
-                <img src="#" alt="">
+                <img src="img/hands.png" alt="">
                 <span>HONESTY</span>
             </div>
         </div>
@@ -115,27 +119,59 @@
         <h2>CeDIA MEMBER</h2>
         <h5>CONTACT US TODAY TO SEE THE BLACK TIGER DIFFERENCE</h5>
 
-        <img src="#" alt="">
+        <img src="img/logo.png" alt="">
         <h2>CONNECT WITH US</h2>
-        <div class="contactInfo">
-            <ul>
+        <div>
+            <ul class="contactInfo">
                 <li>Tel: 123-456-7890</li>
                 <li>Fax: 987-654-3210</li>
                 <li>Email: email@email.com</li>
             </ul>
         </div>
 
-        <form action="POST">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Phone">
-            <input type="textarea" placeholder="Message">
-        </form>
+        <!-- www.formspree.io is email service i used for this -->
+        <div class="panel1Form" data-aos="fade-left" data-aos-duration="3000">
+            <h2>CONTACT US TODAY FOR A COMPLIMENTARY QUOTE</h2>
+            <div class="formContainer">
+                <!-- this is location of where the form will go -->
+                <form action="https://formspree.io/f/xnqwzprw" method="POST" id="my-form">
+                    <div>
+                        <input type="text" placeholder="Name" class="name">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Company Name" class="comapnyName">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email Address" class="email">
+                    </div>
+                    <div>
+                        <input type="number" placeholder="Phone Number" class="phone">
+                    </div>
+                    <div>
+                        <textarea name="comments" class="comments" cols="15" rows="30" placeholder="Comments"></textarea>
+                    </div>
+                    <button class="formBtn">Submit</button>
+                </form>
+            </div>
+            <p id="status"></p>
+        </div>
 
     </section>
 
     <footer id="footer">
-footer
+        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde rem exercitationem voluptates eaque</span>
+        <span>132-456-7890</span>
+        <span>email@email.com</span>
+        <address>
+            123 fake st, city, state, 12345
+        </address>
+        <ul class="social">
+            <li><a href="http://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
+            <li><a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="http://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+        <div class="copyright">&#169;copy right by kp215</div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

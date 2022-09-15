@@ -6,7 +6,55 @@
   list-style: none;
 }
 
+:root {
+  --white: rgb(202, 202, 202);
+  --black: rgb(22, 22, 22);
+  --color1: #6688fa;
+  --color2: #0b3bd9;
+  --color3: #0a2648;
+  --button: rgba(29, 83, 0, 0.816);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color2);
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.button {
+  padding: 10px;
+  border-radius: 5px;
+  border: transparent;
+  color: var(--white);
+  font-size: 20px;
+  background-color: var(--button);
+}
+
+input {
+  width: 400px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 0.8rem;
+}
+
+textarea {
+  width: 400px;
+  padding: 10px;
+  height: 200px;
+  font-size: 0.8rem;
+  margin: 5px;
+}
+
 header nav {
+  border-bottom: 5px solid black;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -14,9 +62,9 @@ header nav {
   text-align: center;
   width: 100%;
   position: fixed;
-  background-color: black;
-  color: white;
-  font-size: 1.5rem;
+  background-color: var(--color3);
+  color: var(--white);
+  font-size: 1rem;
   padding: 0 20px 0;
 }
 header nav .logo img {
@@ -31,7 +79,7 @@ header nav #navLinks li {
   padding: 10px;
 }
 header nav #navLinks li a {
-  color: white;
+  color: var(--white);
 }
 header nav #navLinks li a:hover {
   text-decoration: underline;
@@ -40,9 +88,23 @@ header nav .contact {
   display: flex;
   flex-direction: column;
 }
+header nav .contact a {
+  color: var(--white);
+}
+header nav .contact .social {
+  display: flex;
+  justify-content: center;
+}
+header nav .contact .social li {
+  margin-left: 5px;
+}
+header nav .contact .social li a {
+  color: var(--white);
+}
 header #hero {
   height: 100vh;
-  background-image: url(img/meetingroom.jpg);
+  background-image: url(img/cctv.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/cctv.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,66 +114,50 @@ header #hero {
   justify-content: center;
   align-items: center;
 }
-header #hero h1 {
-  color: white;
-  font-size: 4rem;
-}
-header #hero p {
-  color: antiquewhite;
-  font-size: 1.5rem;
+header #hero .heroText {
   width: 90%;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+}
+header #hero .heroText h1 {
+  color: var(--white);
+  font-size: 4.5rem;
+}
+header #hero .heroText p {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+header #hero .heroText .button {
+  cursor: pointer;
 }
 
 #section1 {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: var(--color3);
+  color: var(--white);
   padding: 40px;
 }
 #section1 h2 {
   font-size: 3rem;
 }
 #section2 {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 25%;
+  gap: 10px;
+}
+#section2 .serviceBox {
+  width: 200px;
+  height: 200px;
+}
+#section2 .serviceBox img {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
-}
-#section2 .imageBox {
-  width: 33%;
-  position: relative;
-  transition: 0.5s ease;
-  cursor: pointer;
-}
-#section2 .imageBox img {
-  width: 100%;
-}
-#section2 .imageBox span {
-  z-index: 10;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
-}
-#section2 .imageBox span:hover {
-  display: block;
 }
 
 #section3 {
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: var(--color3);
+  color: var(--white);
   padding: 40px;
 }
 #section3 h2 {
@@ -120,4 +166,114 @@ header #hero p {
 #section3 p {
   width: 70%;
   margin: auto;
+}
+
+#section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#section4 .reviewIcons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+#section4 .reviewIcons .icon {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  width: 200px;
+  height: 200px;
+}
+#section4 .reviewContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#section4 .reviewContainer .reviewBox {
+  width: 300px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 1px;
+  margin: 20px 20px;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#section4 .reviewContainer .reviewBox:nth-child(1) {
+  background-image: url(img/testimonial1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/testimonial1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section4 .reviewContainer .reviewBox:nth-child(2) {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/testimonial2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section4 .reviewContainer .reviewBox:nth-child(3) {
+  background: linear-gradient(rgba(151, 151, 151, 0.3), rgba(190, 190, 190, 0.3)), url(img/testimonial3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#section4 .reviewContainer .reviewBox h3 {
+  margin: 20px;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--white);
+  padding: 10px 20px;
+}
+#section4 .reviewContainer .reviewBox p {
+  font-size: 1rem;
+  color: var(--white);
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#section5 {
+  text-align: center;
+}
+#section5 img {
+  width: 300px;
+}
+#section5 .contactInfo {
+  display: flex;
+  justify-content: center;
+}
+#section5 .contactInfo li {
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+}
+footer .social li {
+  margin-left: 5px;
+}
+footer .social li a {
+  color: var(--white);
+}
+footer .copyright {
+  padding: 10px;
+  color: var(--white);
+  background-color: var(--color3);
 }/*# sourceMappingURL=style.css.map */
