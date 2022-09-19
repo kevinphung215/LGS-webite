@@ -20,22 +20,24 @@
             </div>
 
             <ul id="navLinks">
-                <li><a href="#section2">SERVICES</a></li>
+                <li><a href="#section1">SERVICES</a></li>
                 <li><a href="#section2">link2</a></li>
                 <li><a href="#section3">link3</a></li>
                 <li><a href="#section4">link4</a></li>
                 <li><a href="#section5">link5</a></li>
-                <li><a href="#footer">Footer</a></li>
             </ul>
 
             <div class="contact">
                 <span>Contact Us</span>
                 <a href="tel:+1234567890">123-456-7890</a>
-                <ul class="social">
+                <a href = "mailto:abc@example.com?subject = Feedback&body = Message">
+                email@email.com
+                </a>
+                <!-- <ul class="social">
                     <li><a href="http://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
                     <li><a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="http://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
-                </ul>
+                </ul> -->
             </div>
         </nav>
         <div id="hero">
@@ -49,30 +51,30 @@
         </div>
     </header>
 
-    <section id="section1" class="banner1">
-        <h2>WHAT WE CAN DO FOR YOU</h2>
-        <p>We provide a wide range of services from data and voice cabling to security and audiovisual systems.
-        <br>
-        Click on any of the following categories to learn more about LGS's professional services.</p>
+    <section id="section1">
+        <div class="banner">
+            <h2>WHAT WE CAN DO FOR YOU</h2>
+            <p>We provide a wide range of services from data and voice cabling to security and audiovisual systems.
+            <br>
+            Click on any of the following categories to learn more about LGS's professional services.</p>
+        </div>
+        <div class="services">
+            <div class="serviceBox">
+                <img src="img/network.jpg" alt="">
+                <span>Networks</span>
+            </div>
+            <div class="serviceBox">
+                <img src="img/cameras.jpg" alt="">
+                <span>Video Surveillance</span>
+            </div>
+            <div class="serviceBox">
+                <img src="img/access.jpg" alt="">
+                <span>Access Control</span>
+            </div>
+        </div>
     </section>
 
-    <section id="section2" class="services">
-        <div class="serviceBox">
-            <img src="img/network.jpg" alt="">
-            <span>Networks</span>
-        </div>
-        <div class="serviceBox">
-            <img src="img/cameras.jpg" alt="">
-            <span>Video Surveillance</span>
-        </div>
-        <div class="serviceBox">
-            <img src="img/network.jpg" alt="">
-            <span>Name of Service</span>
-        </div>
-    
-    </section>
-
-    <section id="section3" class="banner2">
+    <section id="section2" class="banner2">
         <h2>THE LGS DIFFERENCE</h2>
         <p>At LGS, we treat your business like our own because, let's face it, your business IS our business.  We built our brand on the principles that mean the most to us: Experience, Innovation, and Honesty. This foundation allows us to treat our clients the way they want to be treated, receiving the highest quality of customer support, engineering and design from the most skilled professionals in the industry, and the highest caliber of work performed by our qualified field technicians. Unlike other low-voltage companies, we will always prioritize your business' immediate needs when planning out your project while still making sure your systems are prepared for future growth and technological advances.</p>
     </section>
@@ -150,7 +152,7 @@
                     <div>
                         <textarea name="comments" class="comments" cols="15" rows="30" placeholder="Comments"></textarea>
                     </div>
-                    <button class="formBtn">Submit</button>
+                    <button class="button">Submit</button>
                 </form>
             </div>
             <p id="status"></p>

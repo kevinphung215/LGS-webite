@@ -15,15 +15,6 @@
   --button: rgba(29, 83, 0, 0.816);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--color2);
-  font-family: "Poppins", sans-serif;
-}
-
 a {
   text-decoration: none;
   color: var(--white);
@@ -53,6 +44,18 @@ textarea {
   margin: 5px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color3);
+  font-family: "Poppins", sans-serif;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
 header nav {
   border-bottom: 5px solid black;
   z-index: 100;
@@ -61,7 +64,6 @@ header nav {
   align-items: center;
   text-align: center;
   width: 100%;
-  position: fixed;
   background-color: var(--color3);
   color: var(--white);
   font-size: 1rem;
@@ -103,7 +105,6 @@ header nav .contact .social li a {
 }
 header #hero {
   height: 100vh;
-  background-image: url(img/cctv.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/cctv.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -132,40 +133,85 @@ header #hero .heroText .button {
 }
 
 #section1 {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+}
+#section1 .banner {
   text-align: center;
-  background-color: var(--color3);
   color: var(--white);
   padding: 40px;
 }
-#section1 h2 {
+#section1 .banner h2 {
   font-size: 3rem;
 }
-#section2 {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 25%;
-  gap: 10px;
+#section1 .banner p {
+  font-size: 1rem;
 }
-#section2 .serviceBox {
-  width: 200px;
-  height: 200px;
-}
-#section2 .serviceBox img {
+#section1 .services {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color3);
+}
+#section1 .services .serviceBox {
+  width: 400px;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+#section1 .services .serviceBox img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.3s ease-in;
+}
+#section1 .services .serviceBox img:hover {
+  transform: scale(1.1);
+}
+#section1 .services .serviceBox span {
+  color: var(--white);
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+#section1 .services .serviceBox span:hover {
+  display: block;
+}
+#section1 .services .serviceBox:hover {
+  opacity: 0.6;
 }
 
-#section3 {
+#section2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/cameraInstall.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  background-color: var(--color3);
   color: var(--white);
   padding: 40px;
 }
-#section3 h2 {
+#section2 h2 {
   font-size: 3rem;
 }
-#section3 p {
+#section2 p {
   width: 70%;
   margin: auto;
+  font-weight: 400;
 }
 
 #section4 {
@@ -210,7 +256,6 @@ header #hero .heroText .button {
   text-align: center;
 }
 #section4 .reviewContainer .reviewBox:nth-child(1) {
-  background-image: url(img/testimonial1.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/testimonial1.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -223,7 +268,8 @@ header #hero .heroText .button {
   background-size: cover;
 }
 #section4 .reviewContainer .reviewBox:nth-child(3) {
-  background: linear-gradient(rgba(151, 151, 151, 0.3), rgba(190, 190, 190, 0.3)), url(img/testimonial3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/testimonial3.jpg);
+  background-position: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -245,6 +291,7 @@ header #hero .heroText .button {
 
 #section5 {
   text-align: center;
+  color: var(--white);
 }
 #section5 img {
   width: 300px;
@@ -261,6 +308,7 @@ footer {
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: var(--white);
 }
 footer .social {
   display: flex;
