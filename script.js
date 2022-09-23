@@ -29,3 +29,12 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit)
+
+
+const slider = document.querySelector('.slider');
+M.Slider.init(slider, {
+    indicators: true,
+    height: 500,
+    transition: 500,
+    interval: 4000
+});

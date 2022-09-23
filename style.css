@@ -135,7 +135,6 @@ header #hero .heroText .button {
 #section1 {
   height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
 }
 #section1 .banner {
   text-align: center;
@@ -203,7 +202,7 @@ header #hero .heroText .button {
   background-size: cover;
   text-align: center;
   color: var(--white);
-  padding: 40px;
+  padding: 50px;
 }
 #section2 h2 {
   font-size: 3rem;
@@ -214,27 +213,28 @@ header #hero .heroText .button {
   font-weight: 400;
 }
 
-#section4 {
+#section3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 50px;
 }
-#section4 .reviewIcons {
+#section3 .reviewIcons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
 }
-#section4 .reviewIcons .icon {
+#section3 .reviewIcons .icon {
   display: flex;
   flex-direction: column;
   color: var(--white);
   width: 200px;
   height: 200px;
 }
-#section4 .reviewContainer {
+#section3 .reviewContainer {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -243,8 +243,9 @@ header #hero .heroText .button {
   text-align: center;
   width: 100%;
 }
-#section4 .reviewContainer .reviewBox {
+#section3 .reviewContainer .reviewBox {
   width: 300px;
+  height: 500px;
   border: 1px solid;
   display: flex;
   flex-direction: column;
@@ -255,33 +256,33 @@ header #hero .heroText .button {
   align-items: center;
   text-align: center;
 }
-#section4 .reviewContainer .reviewBox:nth-child(1) {
+#section3 .reviewContainer .reviewBox:nth-child(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/testimonial1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#section4 .reviewContainer .reviewBox:nth-child(2) {
+#section3 .reviewContainer .reviewBox:nth-child(2) {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/testimonial2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#section4 .reviewContainer .reviewBox:nth-child(3) {
+#section3 .reviewContainer .reviewBox:nth-child(3) {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/testimonial3.jpg);
   background-position: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#section4 .reviewContainer .reviewBox h3 {
+#section3 .reviewContainer .reviewBox h3 {
   margin: 20px;
   font-size: 2rem;
   font-weight: 500;
   color: var(--white);
   padding: 10px 20px;
 }
-#section4 .reviewContainer .reviewBox p {
+#section3 .reviewContainer .reviewBox p {
   font-size: 1rem;
   color: var(--white);
   margin-bottom: 20px;
@@ -289,19 +290,46 @@ header #hero .heroText .button {
   text-transform: uppercase;
 }
 
-#section5 {
+#section4 {
   text-align: center;
   color: var(--white);
 }
-#section5 img {
+#section4 .banner3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/cameraInstall2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: var(--white);
+  padding: 50px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section4 .banner3 h2 {
+  font-size: 3rem;
+}
+#section4 .banner3 p {
+  width: 70%;
+  margin: auto;
+  font-weight: 400;
+}
+#section4 img {
+  padding-top: 50px;
   width: 300px;
 }
-#section5 .contactInfo {
+#section4 .contactInfo {
   display: flex;
   justify-content: center;
 }
-#section5 .contactInfo li {
+#section4 .contactInfo li {
   padding: 10px;
+}
+#section4 .form {
+  padding-bottom: 50px;
 }
 
 footer {
