@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kevin Phung">
     <link rel="stylesheet" href="style.css">
-    <!-- google font -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- awesome icon -->
+    <!-- awesome font icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- materialize css -->
+    <!-- materializecss slider and modal box -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Looking Glass Security</title>
 </head>
@@ -50,7 +50,7 @@
                 <p>We can take care of all your needs. 
                 <br>Interested in getting a home security system 
                 <br>Or need to get a network set up? </p>
-                <button class="button"><a href="">Contact Us Now</a></button>
+                <button class="button"><a href="contact.html">Contact Us Now</a></button>
             </div>
         </div>
     </header>
@@ -100,33 +100,30 @@
         </div>
         <div class="reviewContainer">
             <div class="reviewBox">
-                <h3>Jane Doe</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita suscipit illo magni quis fugiat eum esse, eius atque adipisci.
-                </p>
-                <img src="#" alt="">
-            </div>
-            <div class="reviewBox">
-                <h3>John Doe</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita suscipit illo magni quis fugiat eum esse, eius atque adipisci.
+                <h3>Company Name</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita suscipit illo magni quis fugiat eum esse, eius atque adipisci.llo magni quis fugiat eum esse, eius atque adipisci.
                 </p>
                 <img src="#" alt="">
             </div>
             <div class="reviewBox">
                 <h3>Company Name</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita suscipit illo magni quis fugiat eum esse, eius atque adipisci.
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita suscipit illo magni quis fugiat eum esse, eius atque adipisci.llo magni quis fugiat eum esse, eius atque adipisci.llo magni quis fugiat eum esse, eius atque adipisci.llo magni quis fugiat eum esse, eius atque adipisci.
+                </p>
+                <img src="#" alt="">
+            </div>
+            <div class="reviewBox">
+                <h3>Company Name</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita suscipit illo magni quis fugiat eum esse, eius atque llo magni quis fugiat eum esse, eius atque adipisci.llo magni quis fugiat eum esse, eius atque adipisci.adipisci.
                 </p>
                 <img src="#" alt="">
             </div>
         </div>
     </section>
 
-
     <section id="section4" class="contactForm">
-        <div class="banner3">
-            <h5>WE ARE PROUD TO BE A</h5>
-            <h2>LGS MEMBER</h2>
-            <h5>CONTACT US TODAY TO SEE THE LGS DIFFERENCE</h5>
-        </div>
+        <h5>WE ARE PROUD TO BE A</h5>
+        <h2>CeDIA MEMBER</h2>
+        <h5>CONTACT US TODAY TO SEE THE BLACK TIGER DIFFERENCE</h5>
 
         <img src="img/logo.png" alt="">
         <h2>CONNECT WITH US</h2>
@@ -140,24 +137,26 @@
 
         <!-- www.formspree.io is email service i used for this -->
         <div class="form">
-            <h2>CONTACT US TODAY FOR A COMPLIMENTARY QUOTE</h2>
+            <h3>CONTACT US TODAY FOR A COMPLIMENTARY QUOTE</h3>
             <div class="formContainer">
                 <!-- this is location of where the form will go -->
                 <form action="https://formspree.io/f/xnqwzprw" method="POST" id="my-form">
                     <div>
-                        <input type="text" placeholder="Name" class="name">
+                        <input type="text" placeholder="Name" class="name" required>
                     </div>
                     <div>
                         <input type="text" placeholder="Company Name" class="comapnyName">
                     </div>
                     <div>
-                        <input type="email" placeholder="Email Address" class="email">
+                        <input type="email" placeholder="Email Address" class="email" required>
                     </div>
                     <div>
-                        <input type="number" placeholder="Phone Number" class="phone">
+                        <input type="tel" id="phone" name="phone"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        placeholder="Phone" required>
                     </div>
                     <div>
-                        <textarea name="comments" class="comments" cols="15" rows="30" placeholder="Comments"></textarea>
+                        <textarea name="comments" class="comments" cols="15" rows="30" placeholder="Comments"></textarea required>
                     </div>
                     <button class="button">Submit</button>
                 </form>
@@ -168,12 +167,12 @@
     </section>
 
     <footer id="footer">
-        <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste unde rem exercitationem voluptates eaque</span>
-        <span>132-456-7890</span>
-        <span>email@email.com</span>
+        <span><i>'Lorem ipsum dolor sit amet consectetur adipisicing quaerat dolore ipsam placeat qui!'</i></span>
         <address>
             123 fake st, city, state, 12345
         </address>
+        <span>email@email.com</span>
+        <span>132-456-7890</span>
         <ul class="social">
             <li><a href="http://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
             <li><a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -181,9 +180,7 @@
         </ul>
         <div class="copyright">&#169;copy right by kp215</div>
     </footer>
-
     <script src="script.js"></script>
-    <!-- materialize css -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
