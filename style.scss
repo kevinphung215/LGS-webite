@@ -30,14 +30,6 @@ a {
 }
 
 
-textarea {
-    width: 400px;
-    padding: 10px;
-    height: 200px;
-    font-size:.8rem;
-    margin: 5px;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -103,33 +95,33 @@ header {
             }
         }
     }
-    #hero {
-        height: 100vh;
-        // background-image: url(img/cctv.jpg);
-        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(img/contactBanner.jpg);
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .heroText {
-            width: 90%;
-            margin: 0 auto;
-            text-align: left;
-            h1 {
-                color: var(--white);
-                font-size: 4.5rem;
-            }
-            p {
-                color: var(--white);
-                font-size: 1.5rem;
-            }
-            .button {
-                cursor: pointer;
-            }
+}
+
+#hero {
+    height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(img/cctv.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .heroText {
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+        h1 {
+            color: var(--white);
+            font-size: 4.5rem;
+        }
+        p {
+            color: var(--white);
+            font-size: 1.5rem;
+        }
+        .button {
+            cursor: pointer;
         }
     }
 }
@@ -137,7 +129,6 @@ header {
 #section1 {
     height: 100vh;
     width: 100%;
-    scroll-snap-align: start;
     .banner {
         text-align: center;
         // background-color: var(--color3);
@@ -163,17 +154,20 @@ header {
             transition: .5s ease;
             cursor: pointer;
             overflow: hidden;
-                &:hover {
-                transform: scale(1.1);
-                }
+            &:hover {
+                opacity: .6;
+            }
             img {
                 width: 100%;
                 height: 300px;
                 object-fit: cover;
                 transition: .3s ease-in;
+                overflow: hidden;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
-            span {
-                // display: none;
+            p {
                 color: var(--white);
                 z-index: 10;
                 position: absolute;
@@ -187,12 +181,6 @@ header {
                 text-align: center;
                 font-size: 2rem;
                 font-weight: 600;
-                &:hover {
-                    display: block;
-                }
-            }
-            &:hover {
-                opacity: .6;
             }
         }
     }
@@ -312,19 +300,29 @@ header {
             padding: 10px;
         }
     }
-    // .formContainer {
-    //     width: 600px;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    //     align-items: center;
-    //     input {
-    //         width: 400px;
-    //         padding: 10px;
-    //         margin: 5px;
-    //         font-size:.8rem;
-    //     }
-    // }
+    .formContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input {
+            color: var(--white);
+            width: 400px;
+            padding: 5px;
+            margin: 5px;
+            font-size: 1rem;
+            background-color: transparent;
+        }
+        textarea {
+            color: var(--white);
+            width: 400px;
+            padding: 10px;
+            height: 100px;
+            font-size: 1rem;
+            margin: 5px;
+        }
+    }
 }
 
 footer {
@@ -352,15 +350,63 @@ footer {
 
 // Contact Page
 
-.contactHero {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(img/cctv.jpg) !important;
-    .contactHeroText {
-        h1{
-            color: white;
+#contactHero {
+    .contactHeroText{
+        height: 100vh;
+        background-image: url(img/contactBanner.jpg);
+        // background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    .info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+    .form {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+            text-align: center;
+            color: var(--white);
+        }
+        form {
+            width: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            text-align: center;
+            input {
+                color: var(--white);
+                width: 400px;
+                padding: 5px;
+                margin: 5px;
+                font-size: 1rem;
+                background-color: transparent;
+            }
+            textarea {
+                color: var(--white);
+                width: 400px;
+                padding: 10px;
+                height: 100px;
+                font-size: 1rem;
+                margin: 5px;
+            }
         }
     }
 }

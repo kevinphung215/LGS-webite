@@ -29,14 +29,6 @@ a {
   background-color: var(--button);
 }
 
-textarea {
-  width: 400px;
-  padding: 10px;
-  height: 200px;
-  font-size: 0.8rem;
-  margin: 5px;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -96,9 +88,10 @@ header nav .contact .social li {
 header nav .contact .social li a {
   color: var(--white);
 }
-header #hero {
+
+#hero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/contactBanner.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/cctv.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,27 +101,26 @@ header #hero {
   justify-content: center;
   align-items: center;
 }
-header #hero .heroText {
+#hero .heroText {
   width: 90%;
   margin: 0 auto;
   text-align: left;
 }
-header #hero .heroText h1 {
+#hero .heroText h1 {
   color: var(--white);
   font-size: 4.5rem;
 }
-header #hero .heroText p {
+#hero .heroText p {
   color: var(--white);
   font-size: 1.5rem;
 }
-header #hero .heroText .button {
+#hero .heroText .button {
   cursor: pointer;
 }
 
 #section1 {
   height: 100vh;
   width: 100%;
-  scroll-snap-align: start;
 }
 #section1 .banner {
   text-align: center;
@@ -157,7 +149,7 @@ header #hero .heroText .button {
   overflow: hidden;
 }
 #section1 .services .serviceBox:hover {
-  transform: scale(1.1);
+  opacity: 0.6;
 }
 #section1 .services .serviceBox img {
   width: 100%;
@@ -165,8 +157,12 @@ header #hero .heroText .button {
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.3s ease-in;
+  overflow: hidden;
 }
-#section1 .services .serviceBox span {
+#section1 .services .serviceBox img:hover {
+  transform: scale(1.1);
+}
+#section1 .services .serviceBox p {
   color: var(--white);
   z-index: 10;
   position: absolute;
@@ -180,12 +176,6 @@ header #hero .heroText .button {
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
-}
-#section1 .services .serviceBox span:hover {
-  display: block;
-}
-#section1 .services .serviceBox:hover {
-  opacity: 0.6;
 }
 
 #section2 {
@@ -301,6 +291,29 @@ header #hero .heroText .button {
 #section4 .contactInfo li {
   padding: 10px;
 }
+#section4 .formContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#section4 .formContainer input {
+  color: var(--white);
+  width: 400px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1rem;
+  background-color: transparent;
+}
+#section4 .formContainer textarea {
+  color: var(--white);
+  width: 400px;
+  padding: 10px;
+  height: 100px;
+  font-size: 1rem;
+  margin: 5px;
+}
 
 footer {
   display: flex;
@@ -325,13 +338,60 @@ footer .copyright {
   background-color: var(--color3);
 }
 
-.contactHero {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/cctv.jpg) !important;
+#contactHero .contactHeroText {
+  height: 100vh;
+  background-image: url(img/contactBanner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.contactHero .contactHeroText h1 {
-  color: white;
+
+.contact {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--white);
+}
+.contact .info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.contact .form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .form h3 {
   text-align: center;
+  color: var(--white);
+}
+.contact .form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .form form input {
+  color: var(--white);
+  width: 400px;
+  padding: 5px;
+  margin: 5px;
+  font-size: 1rem;
+  background-color: transparent;
+}
+.contact .form form textarea {
+  color: var(--white);
+  width: 400px;
+  padding: 10px;
+  height: 100px;
+  font-size: 1rem;
+  margin: 5px;
 }/*# sourceMappingURL=style.css.map */
