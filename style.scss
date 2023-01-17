@@ -1,3 +1,5 @@
+@import "./breakpoint/breakpoint.scss";
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +11,7 @@
 :root {
     --white: rgb(202, 202, 202);
     --black: rgb(22, 22, 22);
-    --color1: #6688fa;
+    --color1: rgb(1, 119, 191);
     --color2: #0b3bd9;
     --color3: #0a2648;
     --button : rgba(29, 83, 0, 0.816);
@@ -40,12 +42,13 @@ body {
     // this is for scrolling snap. each section will have scroll-align: start
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 
 header {
     nav {
-        border-bottom: 5px solid black; //remove later?
+        // border-bottom: 5px solid black; //remove later?
         z-index: 100;
         display: flex;
         justify-content: space-between;
@@ -59,6 +62,9 @@ header {
         padding: 0 20px 0;
         .logo {
             img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 width: 150px;
                 height: 50px;
                 cursor: pointer;
@@ -99,7 +105,7 @@ header {
 
 #hero {
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(img/cctv.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url(img/cameraInstall2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -163,9 +169,6 @@ header {
                 object-fit: cover;
                 transition: .3s ease-in;
                 overflow: hidden;
-                &:hover {
-                    transform: scale(1.1);
-                }
             }
             p {
                 color: var(--white);
@@ -181,6 +184,8 @@ header {
                 text-align: center;
                 font-size: 2rem;
                 font-weight: 600;
+                -webkit-text-stroke: 1px black;
+                -webkit-text-fill-color: white;
             }
         }
     }

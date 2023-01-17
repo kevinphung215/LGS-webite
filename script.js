@@ -1,3 +1,16 @@
+// side navbar
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+});
+
+  // Or with jQuery
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
+
+
 // this is for www.formspree.io for form email
 var form = document.getElementById("my-form");
     
