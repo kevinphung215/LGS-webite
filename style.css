@@ -151,7 +151,6 @@ header nav .contact .social li a {
 }
 #section1 .services .serviceBox {
   width: 400px;
-  position: relative;
   transition: 0.5s ease;
   cursor: pointer;
   overflow: hidden;
@@ -170,7 +169,6 @@ header nav .contact .social li a {
 #section1 .services .serviceBox p {
   color: var(--white);
   z-index: 10;
-  position: absolute;
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
@@ -343,6 +341,48 @@ footer .copyright {
   padding: 10px;
   color: var(--white);
   background-color: var(--color3);
+}
+
+#gHero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(img/cameraInstall2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#gHero .gHeroText {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+#gHero .gHeroText h1 {
+  color: var(--white);
+  font-size: 4.5rem;
+}
+#gHero .gHeroText p {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+#gHero .gHeroText .button {
+  cursor: pointer;
+}
+
+#gSection1 {
+  margin-top: 20px;
+}
+#gSection1 .gContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#gSection1 .gContainer img {
+  padding: 5px;
 }
 
 #contactHero .contactHeroText {
