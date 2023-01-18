@@ -151,6 +151,7 @@ header nav .contact .social li a {
 }
 #section1 .services .serviceBox {
   width: 400px;
+  position: relative;
   transition: 0.5s ease;
   cursor: pointer;
   overflow: hidden;
@@ -169,6 +170,7 @@ header nav .contact .social li a {
 #section1 .services .serviceBox p {
   color: var(--white);
   z-index: 10;
+  position: absolute;
   top: 50%;
   left: 0%;
   transform: translateY(-50%);
@@ -345,7 +347,7 @@ footer .copyright {
 
 #gHero {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(img/cameraInstall2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(img/diagram.jpg);
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
