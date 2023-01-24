@@ -31,7 +31,6 @@ a {
     background-color: var(--button);
 }
 
-
 html {
     scroll-behavior: smooth;
 }
@@ -49,7 +48,7 @@ body {
 header {
     nav {
         // border-bottom: 5px solid black; //remove later?
-        z-index: 100;
+        // z-index: 100;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -104,12 +103,16 @@ header {
 }
 
 #hero {
+    width: 100%;
     height: 100vh;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url(img/cameraInstall2.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url(img/hero.jpg);
+    // background-attachment: fixed;
+    // background-position: center; // remove to fit hero img to page
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
