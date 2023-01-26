@@ -17,6 +17,7 @@
   --color1: rgb(1, 119, 191);
   --color2: #0b3bd9;
   --color3: #0a2648;
+  --color4: #05172a;
   --button: rgba(29, 83, 0, 0.816);
 }
 
@@ -98,8 +99,8 @@ header nav .contact .social li a {
 
 #hero {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(img/hero.jpg);
+  height: 120vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(img/hero2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -283,11 +284,16 @@ header nav .contact .social li a {
   justify-content: center;
   align-items: center;
   padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   color: var(--white);
 }
+#section4 h3 {
+  line-height: 1%;
+}
 #section4 img {
   width: 300px;
+  padding: 50px;
 }
 #section4 .contactInfo {
   display: flex;
@@ -320,27 +326,33 @@ header nav .contact .social li a {
   margin: 5px;
 }
 
-footer {
+#footer {
+  width: 100%;
+  background-color: var(--color4);
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  justify-content: space-around;
   color: var(--white);
   padding-top: 50px;
 }
-footer .social {
-  display: flex;
-  justify-content: center;
+#footer .footerContainer img {
+  width: 150px;
+  height: 100px;
 }
-footer .social li {
+#footer .footerContainer .social {
+  display: flex;
+}
+#footer .footerContainer .social li {
   margin-left: 5px;
 }
-footer .social li a {
+#footer .footerContainer .social li a {
   color: var(--white);
 }
-footer .copyright {
+
+.copyright {
+  text-align: center;
   padding: 10px;
   color: var(--white);
-  background-color: var(--color3);
+  background-color: var(--color4);
 }
 
 #gHero {
